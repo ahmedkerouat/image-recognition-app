@@ -10,10 +10,10 @@
 
     <ImageButton
         android:id="@+id/ImageButton"
-        android:scaleType="centerCrop"
-        android:src="@drawable/add_pic"
         android:layout_width="100dp"
-        android:layout_height="100dp"/>
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/add_pic" />
 
     <ImageView
         android:id="@+id/ImageView"
@@ -21,13 +21,5 @@
         android:layout_width="400dp"
         android:layout_height="600dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Click on the button for taking a picture"
-        android:translationY="-600dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
