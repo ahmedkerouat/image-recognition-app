@@ -16,3 +16,4 @@ local.properties
 .idea/deploymentTargetDropDown.xml
 .idea/misc.xml
 .idea/misc.xml
+mobilenet_v1_1.0_224_quant_and_labels.zip
