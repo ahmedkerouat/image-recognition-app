@@ -1,2 +1,2 @@
-# java-app
+# image-recognition-app
  
