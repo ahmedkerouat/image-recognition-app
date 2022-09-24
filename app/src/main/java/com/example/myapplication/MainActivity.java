@@ -12,9 +12,11 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 @SuppressWarnings("deprecation")
@@ -25,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
     ImageView imageView;
     Uri image_uri;
     private static final int PERMISSION_CODE = 1000;
+    DisplayMetrics displayMetrics = new DisplayMetrics();
+    int height = displayMetrics.heightPixels;
+    int width = displayMetrics.widthPixels;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
