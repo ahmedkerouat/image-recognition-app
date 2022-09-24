@@ -2,24 +2,38 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="match_parent "
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageButton
         android:id="@+id/ImageButton"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:scaleType="fitCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:minWidth="90dp"
+        android:minHeight="30dp"
+        android:scaleType="centerInside"
         android:src="@drawable/add_pic" />
 
     <ImageView
         android:id="@+id/ImageView"
-        android:src="@drawable/ic_baseline_image_24"
-        android:layout_width="400dp"
-        android:layout_height="600dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="800dp"
+        android:maxHeight="800dp"
+        android:minWidth="400dp"
+        android:minHeight="400dp"
+        android:src="@drawable/ic_baseline_image_24" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hi" />
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
